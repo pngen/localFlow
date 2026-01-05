@@ -12,16 +12,16 @@ LocalFlow is a distributed systems architecture designed for deterministic workf
 │     CLI     │    │  Workflow    │    │  Timer       │
 │             │    │  Engine      │    │  Scheduler   │
 └──────┬──────┘    └──────┬───────┘    └──────┬───────┘
-│                 │                │
-└─────────────────┼────────────────┘
-│
-┌──────────▼──────────┐
-│  Activity Runner    │
-└──────────┬──────────┘
-│
-┌──────────▼──────────┐
-│   State Persistence │
-└─────────────────────┘
+       │                  │                   │
+       └──────────────────┼───────────────────┘
+                          │
+               ┌──────────▼──────────┐
+               │   Activity Runner   │
+               └──────────┬──────────┘
+                          │
+               ┌──────────▼──────────┐
+               │   State Persistence │
+               └─────────────────────┘
 ```
 
 ## Core Components
